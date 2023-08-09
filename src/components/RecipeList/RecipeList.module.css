@@ -1,0 +1,257 @@
+/*--------- SEARCH BAR ---------------*/
+
+.card {
+  /* max-width: 1550px; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 20px auto;
+  margin-top: 0px;
+  /* width: 1200px; */
+
+  /* gap: 9px; */
+}
+.card_text {
+  text-align: center;
+}
+.card_info1 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+input {
+  width: 40%;
+  /* margin: 0px auto; */
+  /* text-align: center; */
+  padding: 22px 15px;
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: 300;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 08px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 8px;
+}
+
+.btn1 {
+  align-items: center;
+  padding: 22px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------ITEM CARD ------- */
+.list_container {
+  max-width: 1280px;
+  /* margin: 25px auto; */
+  /* display: flex; */
+  /* flex-direction: row; */
+
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  columns: 6 400px;
+  column-gap: 0px;
+}
+/* BAAP  */
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  /* columns: 6 400px; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0px auto;
+  gap: 8px;
+  transition: 0.1s;
+}
+
+/* first-card child  */
+.parent_card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  align-items: center;
+}
+.child_card {
+  width: 100%;
+}
+.cards:hover {
+  transform: scale(1.02) translateY(-7px) !important ;
+}
+.card_info h2:hover {
+  text-decoration: underline lightblue;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+.card_info {
+  /* align-items: center; */
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 16px; */
+}
+.card_info p {
+  margin-top: 0;
+}
+
+/* second-card child  */
+.list_btns {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  padding-bottom: 0;
+}
+.list_btn {
+  all: none;
+  padding: 8px 18px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*------------- DIALOG BOX ------------ */
+.dialog_rowData {
+  background-color: lightblue;
+  border-radius: 8px;
+  padding: 0px 18px;
+  margin: 8px;
+}
+
+/* ------------- media Query ---------- */
+
+/* -------- SEARCH BAR -------- */
+@media screen and (max-width: 586px) {
+  .card {
+    /* max-width: 1550px; */
+    display: flex;
+    width: 345px;
+    flex-direction: column;
+    margin: 5px auto;
+    margin-top: 0px;
+  }
+  .card_text {
+    text-align: center;
+  }
+  .card_info1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  input {
+    width: 40%;
+    padding: 16px 9px;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 300;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 08px;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom-left-radius: 8px;
+  }
+
+  .btn1 {
+    align-items: center;
+    padding: 16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* -------------MEnu CARDS  --------------- */
+
+  .list_container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .cards {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    /* background-color: #fff; */
+    /* align-items: center; */
+    transition: 0.1s;
+    animation: ease-in-out;
+
+  }
+  .parent_card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    /* align-items: center; */
+  }
+  .child_card {
+    width: 100%;
+  }
+  .cards:hover {
+    transform: scale(1.02) translateY(-7px) !important ;
+    animation: ease-in-out;
+  }
+  .card_info h2:hover {
+    text-decoration: underline lightblue;
+  }
+
+  img {
+    width: 100%;
+    /* border-radius: 12px; */
+  }
+  .card_info {
+    /* align-items: center; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 16px; */
+  }
+  .card_info p {
+    margin-top: 0;
+  }
+  .list_btns {
+    display: flex;
+    gap: 6px;
+  }
+  .list_btn {
+    all: none;
+    padding: 8px 18px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}

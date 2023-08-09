@@ -1,0 +1,11 @@
+.went_wrong{
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    text-align: center;
+    margin: 130px auto;
+}
+.went_wrong img{
+    width: 100%;
+    border-radius: 12px;
+}
